@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+  <link href="plugins/webfonts/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+  <title>News</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">FREE
+      SHIPPING WITH INTERNAL ORDER > 300K
+      - RETURN IN 15 DAYS - QUALITY GUARANTEE</a>
+  </div>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_page-0002.jpg" class="logo-top" alt="">
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">HOME PAGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">INTRODUCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 100%;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+          color: #272727;
+          text-transform: uppercase;
+          margin: 3px 0 30px 0;
+          font-weight: 500; letter-spacing: 2px;">MENU</h3>
+          <div class="justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Product.html">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="introduce.html">INTRODUCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Search</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Search product">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+              <div class="search-item">
+                <div class="search-item-left">
+                  <div class="item-name">Iphone 14 Pro Gold</div>
+                  <div class="item-price">1.076.00$</div>
+                </div>
+                <div class="search-item-right">
+                  <div class="img">
+                    <img src="images/shoes/1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="search-item">
+                <div class="search-item-left">
+                  <div class="item-name">Iphone 14 Pro Gold</div>
+                  <div class="item-price">1.076.00$</div>
+                </div>
+                <div class="search-item-right">
+                  <div class="img">
+                    <img src="images/shoes/1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="search-item">
+                <div class="search-item-left">
+                  <div class="item-name">Iphone 14 Pro Gold</div>
+                  <div class="item-price">1.076.00$</div>
+                </div>
+                <div class="search-item-right">
+                  <div class="img">
+                    <img src="images/shoes/1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+              <div class="resultsContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Cart</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              <table id="cart-view">
+                <tbody>
+                  <tr class="item_1">
+                    <td class="img"><a href="" title="Nike Air Max 90 Essential &quot;Grape&quot;"><img
+                          src="images/iphone-14-pro-max-purple-1.jpg"
+                          alt="/products/nike-air-max-90-essential-grape"></a></td>
+                    <td>
+                      <a class="pro-title-view" style="color: #272727" href=""
+                        title="Nike Air Max 90 Essential &quot;Grape&quot;">Phone Iphone 14 Pro Max </a>
+                      <span class="variant">Purple / 256GB</span>
+                      <span class="pro-quantity-view">1</span>
+                      <span class="pro-price-view">1.098.00$</span>
+                      <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                            class="fas fa-times"></i></a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="text-left">TOTAL AMOUNT:</td>
+                    <td class="text-right" id="total-view-cart">1.098.00$</td>
+                  </tr>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">View cart</a></td>
+                    <td><a href="" class="linktocheckout button dark">Pay</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click to get
+                  discount code
+                  price now!</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-ol">
+        <a style="color: #272727" href="signin.html">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+          <i class="fas fa-search" style="color: black"></i>
+        </a>
+
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!--Banner-->
+  <div>
+    <div>
+      <img src="images/collection_banner.jpg" alt="Products">
+    </div>
+  </div>
+  <div class="breadcrumb-shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+          <ol class="breadcrumb breadcrumb-arrows">
+            <li>
+              <a href="index.html">
+                <span>HOME PAGE</span>
+              </a>
+            </li>
+            <li>
+              <span><span style="color: #777777">NEWS</span></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--List Prodct-->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3 d-none d-sm-block d-sm-none d-md-block">
+        <div class="sidebar-blog">
+          <div class="news-latest">
+            <div class="sidebarblog-title title_block">
+              <h2>News post</h2>
+            </div>
+            <div class="list-news-latest layered">
+              <div class="item-article clearfix">
+                <div class="post-image">
+                  <a href="">
+                    <img src="images/blog/mac.webp"
+                      alt="Macbook Air M2 2022 with luxurious design, elegant ultra-thin appearance. New Macbook model with design and configuration upgrades and affordable price, this will be an ideal device for work and play."></a>
+                </div>
+                <div class="post-content">
+                  <h3>
+                    <a href="">Macbook Air M2 2022 with luxurious design, elegant ultra-thin appearance. New Macbook
+                      model with design and configuration upgrades and affordable price, this will be an ideal device
+                      for work and play.</a>
+                  </h3>
+                  <span class="author">
+                    <a href="">Du Nien</a>
+                  </span>
+                  <span class="date">
+                    11.06.2022
+                  </span>
+                </div>
+              </div>
+              <div class="item-article clearfix">
+                <div class="post-image">
+                  <a href=""><img src="images/blog/apple-watch-s7-lte-41mm-xanh-duong.jpg"
+                      alt="Apple Watch S7 LTE 41 mm aluminum silicone band has an upgraded design compared to its predecessor. Possessing a luxurious and modern look, the Apple Watch S7 is designed with soft rounded corners with a curved watch face to create a more seamless feel with the bezel."></a>
+                </div>
+                <div class="post-content">
+                  <h3>
+                    <a href="">The frame is designed to be 40% thinner and made from 100% eco-friendly recycled
+                      aluminum. The silicone strap has good elasticity, comfortable to wear and effectively
+                      waterproof.</a>
+                  </h3>
+                  <span class="author">
+                    <a href="">Du Nien</a>
+                  </span>
+                  <span class="date">
+                    11.06.2022
+                  </span>
+                </div>
+              </div>
+              <div class="item-article clearfix">
+                <div class="post-image">
+                  <a href=""><img src="images/blog/iphone-14-xanh.jpg"
+                      alt="iPhone 14 128GB is considered a booming smartphone model of the apple house in 2022, impressed with its youthful appearance, quality screen accompanied by improvements in operating system and image processing algorithms, making the device become more popular. It became a name that attracted the attention of many users at the time of its launch."></a>
+                </div>
+                <div class="post-content">
+                  <h3>
+                    <a href="">iPhone 14 128GB is considered a booming smartphone model of the apple house in 2022,
+                      impressed with its youthful appearance, quality screen accompanied by improvements in operating
+                      system and image processing algorithms, making the device become more popular. It became a name
+                      that attracted the attention of many users at the time of its launch.</a>
+                  </h3>
+                  <span class="author">
+                    <a href="">DN</a>
+                  </span>
+                  <span class="date">
+                    11.06.2022
+                  </span>
+                </div>
+              </div>
+              <div class="item-article clearfix">
+                <div class="post-image">
+                  <a href=""><img src="images/blog/asus-tuf-gaming.jpg"
+                      alt="If you are looking for a gaming laptop but still own an affordable price, the Asus TUF Gaming F15 FX506LHB i5 (HN188W) laptop will be a worthy choice with a powerful NVIDIA GeForce GTX discrete graphics card of the same style. Unique, sturdy design."></a>
+                </div>
+                <div class="post-content">
+                  <h3>
+                    <a href="">If you are looking for a gaming laptop but still own an affordable price, the Asus TUF
+                      Gaming F15 FX506LHB i5 (HN188W) laptop will be a worthy choice with a powerful NVIDIA GeForce GTX
+                      discrete graphics card of the same style. Unique, sturdy design.</a>
+                  </h3>
+                  <span class="author">
+                    <a href="">DN</a>
+                  </span>
+                  <span class="date">
+                    11.06.2022
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="heading-page clearfix">
+          <h1>News</h1>
+        </div>
+        <div class="blog-content">
+          <div class="list-article-content blog-posts">
+            <!-- Begin: Nội dung blog -->
+            <article class="blog-loop">
+              <div class="blog-post row">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <a href="detailblog.html" class="blog-post-thumbnail"
+                    title="The new MacBook Pro features a 1080p camera, the best audio system in a notebook, and the most advanced connectivity ever in a MacBook Pro"
+                    rel="nofollow">
+                    <img src="images/blog/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x (1).jpg"
+                      alt="The new MacBook Pro features a 1080p camera, the best audio system in a notebook, and the most advanced connectivity ever in a MacBook Pro">
+                  </a>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12">
+                  <h3 class="blog-post-title">
+                    <a href="detailblog.html"
+                      title="The new MacBook Pro features a 1080p camera, the best audio system in a notebook, and the most advanced connectivity ever in a MacBook Pro">The
+                      new MacBook Pro features a 1080p camera, the best audio system in a notebook, and the most
+                      advanced connectivity ever in a MacBook Pro</a>
+                  </h3>
+                  <div class="blog-post-meta">
+                    <span class="author vcard">Writer: Dunien</span>
+                    <span class="date">
+                      <time pubdate="" datetime="2019-06-11">11.06.2022</time>
+                    </span>
+                  </div>
+                  <p class="entry-content">Game-changing MacBook Pro with M1 Pro and M1 Max delivers extraordinary
+                    performance and battery life, and features the world’s best notebook display</p>
+                </div>
+              </div>
+            </article>
+            <article class="blog-loop">
+              <div class="blog-post row">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <a href="detailblog.html" class="blog-post-thumbnail"
+                    title="Samsung Galaxy Note 20 5G launched to the market with a new rectangular front camera design and a new rectangular rear camera. With strong and durable outstanding features, it will definitely bring a great experience to users."
+                    rel="nofollow">
+                    <img src="images/blog/samsungnote20.jpg"
+                      alt="Samsung Galaxy Note 20 5G launched to the market with a new rectangular front camera design and a new rectangular rear camera. With strong and durable outstanding features, it will definitely bring a great experience to users.">
+                  </a>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12">
+                  <h3 class="blog-post-title">
+                    <a href="detailblog.html"
+                      title="Samsung Galaxy Note 20 5G launched to the market with a new rectangular front camera design and a new rectangular rear camera. With strong and durable outstanding features, it will definitely bring a great experience to users.">Samsung
+                      Galaxy Note 20 5G launched to the market with a new rectangular front camera design and a new
+                      rectangular rear camera. With strong and durable outstanding features, it will definitely bring a
+                      great experience to users.</a>
+                  </h3>
+                  <div class="blog-post-meta">
+                    <span class="author vcard">Writer: Dunien</span>
+                    <span class="date">
+                      <time pubdate="" datetime="2019-06-11">11.06.2022</time>
+                    </span>
+                  </div>
+                  <p class="entry-content">Samsung Galaxy Note 20 5G has a luxurious and elegant design</p>
+                </div>
+              </div>
+            </article>
+            <article class="blog-loop">
+              <div class="blog-post row">
+
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <a href="detailblog.html" class="blog-post-thumbnail"
+                    title="Premium design, wearable with silicone earplugs
+The AirPods Pro MagSafe Charge Apple MLWK3 Bluetooth headset is crafted with a streamlined appearance, youthful white color, beautiful light, great coordination with all your outfits from casual to office, to your party."
+                    rel="nofollow">
+                    <img src="images/blog/airpodPro.jpg"
+                      alt="Premium design, wearable with silicone earplugs
+The AirPods Pro MagSafe Charge Apple MLWK3 Bluetooth headset is crafted with a streamlined appearance, youthful white color, beautiful light, great coordination with all your outfits from casual to office, to your party.">
+                  </a>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12">
+                  <h3 class="blog-post-title">
+                    <a href="detailblog.html"
+                      title="Premium design, wearable with silicone earplugs
+The AirPods Pro MagSafe Charge Apple MLWK3 Bluetooth headset is crafted with a streamlined appearance, youthful white color, beautiful light, great coordination with all your outfits from casual to office, to your party.">Premium
+                      design, wearable with silicone earplugs
+                      The AirPods Pro MagSafe Charge Apple MLWK3 Bluetooth headset is crafted with a streamlined
+                      appearance, youthful white color, beautiful light, great coordination with all your outfits from
+                      casual to office, to your party.</a>
+                  </h3>
+                  <div class="blog-post-meta">
+                    <span class="author vcard">Writer: Dunien</span>
+                    <span class="date">
+                      <time pubdate="" datetime="2019-06-11">11.06.2022</time>
+                    </span>
+                  </div>
+                  <p class="entry-content">Enjoy captivating sound, perfectly tuned for your ears with the
+                    state-of-the-art H1 chip and Adaptive EQ technology.</p>
+                </div>
+              </div>
+            </article>
+            <article class="blog-loop">
+              <div class="blog-post row">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <a href="detailblog.html" class="blog-post-thumbnail"
+                    title="Are you looking forward to quality products from Apple? After a series of popular products such as iPhone 12 series, the company has launched the iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) equipped with increasingly outstanding and trendy features."
+                    rel="nofollow">
+                    <img src="images/blog/ipad-pro-m1.jpg"
+                      alt="Are you looking forward to quality products from Apple? After a series of popular products such as iPhone 12 series, the company has launched the iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) equipped with increasingly outstanding and trendy features.">
+                  </a>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12">
+                  <h3 class="blog-post-title">
+                    <a href="detailblog.html"
+                      title="Are you looking forward to quality products from Apple? After a series of popular products such as iPhone 12 series, the company has launched the iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021) equipped with increasingly outstanding and trendy features.">
+                      Are you looking forward to quality products from Apple? After a series of popular products such as
+                      iPhone 12 series, the company has launched the iPad Pro M1 12.9 inch Wifi Cellular 128GB (2021)
+                      equipped with increasingly outstanding and trendy features.</a>
+                  </h3>
+                  <div class="blog-post-meta">
+                    <span class="author vcard">Writer: Dunien</span>
+                    <span class="date">
+                      <time pubdate="" datetime="2022-06-10">10.06.2022</time>
+                    </span>
+                  </div>
+                  <p class="entry-content">Brilliant 12.9-inch Liquid Retina XDR display. Breakthrough configuration</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="sortpagibar pagi clearfix text-center">
+            <div id="pagination" class="clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <span class="page-node current">1</span>
+                <a class="page-node" href="">2</a>
+                <a class="next" href="">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 31 10"
+                    style="enable-background:new 0 0 31 10; width: 31px; height: 10px;" xml:space="preserve">
+                    <polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon>
+                  </svg> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--gallery-->
+  <section class="section wrapper-home-newsletter">
+    <div class="container-fluid">
+      <div class="content-newsletter">
+        <h2>Sign up</h2>
+        <p>Sign up for the business newsletter to update new products, receive information about special offers and
+          information
+          believe
+          other discounts.</p>
+        <div class="form-newsletter">
+          <form action="" accept-charset="UTF-8" class="">
+            <div class="form-group">
+              <input type="hidden" id="contact_tags">
+              <input required="" type="email" value="" placeholder="Enter your email" aria-label="Email Address"
+                class="">
+              <button type="submit" class=""><span>To send</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                INTRODUCE
+              </h4>
+              <div class="footer-content">
+                <p>Online shopping site for the latest, best, and reputable products, helping you access the latest
+                  technology trends.</p>
+                <div class="social-list">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-google"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-youtube"></a>
+                  <a href="#" class="fab fa-skype"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-link">
+              <h4 class="footer-title">
+                JURIDICAL &amp; QUESTION
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#" title="Search">Search</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Introduce">Introduce</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Return Policy">Return Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Terms of Service">Terms of Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Contact Info
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li><span>Address:</span> 66 Vo Van Tan, Thanh Khe district, Da Nang city</li>
+                  <li><span>Phone:</span> 0949431757</li>
+                  <li><span>Fax:</span> 0376876576</li>
+                  <li><span>Mail:</span> dunien811@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                FANPAGE
+              </h4>
+              <div class="footer-content">
+                <div id="fb-root">
+                  <div class="footer-static-content">
+                    <div class="fb-page" data-href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                      data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                      <!-- <blockquote cite="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                        class="fb-xfbml-parse-ignore"><a
+                          href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/">AziWorld Viet Nam</a>
+                      </blockquote> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer--copyright">
+      <div class="container">
+        <hr>
+        <!-- <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2019 <a href="https://runner-inn.myharavan.com"> DN</a>. <a target="_blank"
+              href="https://www.facebook.com/henrynguyen202">Powered by HuniBlue</a></p>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+  <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+  <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="plugins/bootstrap/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+  <script src="plugins/uikit/uikit.min.js"></script>
+  <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>

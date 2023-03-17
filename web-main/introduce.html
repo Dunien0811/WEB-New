@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+  <link href="plugins/webfonts/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+  <title>Introduce</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">FREE
+      SHIPPING WITH INTERNAL ORDER > 300K
+      - RETURN IN 15 DAYS - QUALITY GUARANTEE</a>
+  </div>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_page-0002.jpg" class="logo-top" alt="">
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME PAGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="introduce.html">INTRODUCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">MENU</h3>
+          <div class="justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Product.html">PRODUCT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Product
+
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="introduce.html">INTRODUCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Search</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Search product">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+            </form>
+            <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+              <div class="resultsContent"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Cart</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              <table id="cart-view">
+                <tbody>
+                  <tr class="item_1">
+                    <td class="img"><a href="" title="Nike Air Max 90 Essential &quot;Grape&quot;"><img
+                          src="images/iphone-14-pro-max-purple-1.jpg"
+                          alt="/products/nike-air-max-90-essential-grape"></a></td>
+                    <td>
+                      <a class="pro-title-view" style="color: #272727" href=""
+                        title="Nike Air Max 90 Essential &quot;Grape&quot;">Phone Iphone 14 Pro Max </a>
+                      <span class="variant">Purple / 256GB</span>
+                      <span class="pro-quantity-view">1</span>
+                      <span class="pro-price-view">1.098.00$</span>
+                      <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                            class="fas fa-times"></i></a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="text-left">TOTAL CASH:</td>
+                    <td class="text-right" id="total-view-cart">1.098.00$</td>
+                  </tr>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">View cart</a></td>
+                    <td><a href="" class="linktocheckout button dark">Pay</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click to get
+                  discount code
+                  price now!</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-ol">
+        <a style="color: #272727" href="signin.html">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+          <i class="fas fa-search" style="color: black"></i>
+        </a>
+
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!--Banner-->
+  <div>
+    <div>
+      <img src="images/collection_banner.jpg" alt="Products">
+    </div>
+  </div>
+  <div class="breadcrumb-shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+          <ol class="breadcrumb breadcrumb-arrows">
+            <li>
+              <a href="index.html">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <span><span style="color: #777777">Introduce</span></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--List Prodct-->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3 d-none d-sm-block d-sm-none d-md-block">
+        <div class="sidebar-page">
+          <div class="group-menu">
+            <div class="page_menu_title title_block">
+              <h2>List of pages</span></h2>
+            </div>
+            <div class="layered layered-category">
+              <div class="layered-content">
+                <ul class="menuList-links">
+                  <li class=""><a href="index.html" title="Home"><span>Home</span></a></li>
+                  <li class=""><a href="product.html" title="Prodct"><span>Product</span></a></li>
+                  <li class="has-submenu level0 ">
+                  </li>
+                  <li class="active"><a href="introduce.html" title="Introduce"><span>Introduce</span></a></li>
+                  <li class=""><a href="blog.html" title="Blog"><span>Blog</span></a></li>
+                  <li class=""><a href="contact.html" title="Contact"><span>Contact</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="box_image visible-lg visible-md">
+            <div class="banner">
+              <a href="">
+                <img src="images/ip13.jpg" alt="Iphone">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="page-wrapper">
+          <div class="heading-page">
+            <h1>Introduce</h1>
+          </div>
+          <div class="wrapbox-content-page">
+            <div class="content-page ">
+              <p>
+                Welcome to [website name] - where you can find the most reliable and quality electronic technology
+                products.
+                We provide you with a reliable and easy online shopping experience. With a diverse product portfolio, we
+                pride ourselves on providing you with the latest technology, convenience and affordable prices.
+                We are committed to providing you with the best quality products and services, and providing you with a
+                great online shopping experience. We understand that shopping online can be a daunting experience at
+                times, so we have made every effort to ensure that your shopping process is as easy and comfortable as
+                possible.
+                We pride ourselves on our ability to provide you with products of the highest quality and reliability,
+                including world-renowned brands and products designed to meet the needs of our customers.
+                Explore our products today and experience the ultimate online shopping experience. If you have any
+                questions or require assistance, please feel free to contact us. We are always ready to assist you.
+                Thank you for coming to [website name]!
+              <section class="">
+                <div class="content">
+                  <div class="container">
+                    <div class="hot_sp">
+                      <h2 style="text-align:center;padding-top: 10px">
+                        <a style="font-size: 28px;color: black;text-decoration: none" href="">New post</a>
+                      </h2>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+                <!--New-->
+                <div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="post_item">
+                          <div class="post_featured">
+                            <a href="#" title="Phone iPhone 14 Pro Max 1TB">
+                              <img class="img-resize" style="padding-bottom:15px;"
+                                src="images/shoes/iphone-14-pro-vang-1-2.jpg" alt="Phone iPhone 14 Pro Max 1TB">
+                            </a>
+                          </div>
+                          <div class="pro-text">
+                            <span class="post_info_item">
+
+                              Tuesday, June 1, 2023
+
+                            </span>
+                          </div>
+                          <div class="pro-text">
+                            <h3 class="post_title">
+                              <a style=" color: black;
+                              font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                Phone iPhone 14 Pro Max 1TB
+                              </a>
+                            </h3>
+                          </div>
+                          <div style="text-align:center; padding-bottom: 30px;">
+                            <span>iPhone 14 Pro Max was also officially revealed at the annual launch event on September
+                              8 from Apple, ending the rumors with an extremely impressive set of parameters and a
+                              beautiful and luxurious appearance. From October 14, 2022, users can shop for iPhone 14
+                              series products</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="post_item">
+                          <div class="post_featured">
+                            <a href="#" title="Apple Watch Ultra LTE 49mm Alpine strap size L">
+                              <img class="img-resize" style="padding-bottom:15px;"
+                                src="images/shoes/apple-watch-ultra-49mm-day-alpine-size-l-cam-1.jpg"
+                                alt="Phone iPhone 14 Pro Max 1TB">
+                            </a>
+                          </div>
+                          <div class="pro-text">
+                            <span class="post_info_item">
+
+                              Wednesday, December 12, 2022
+
+                            </span>
+                          </div>
+                          <div class="pro-text">
+                            <h3 class="post_title">
+                              <a style=" color: black;
+                                              font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                Apple Watch Ultra LTE 49mm Alpine strap size L
+                              </a>
+                            </h3>
+                          </div>
+                          <div style="text-align:center; padding-bottom: 30px;">
+                            <span>Different from the usual elegantly designed smartwatches, Apple has just launched its
+                              most aggressive smart watch product ever called Apple Watch Ultra LTE 49mm with Titanium
+                              strap Alpine size L, with high quality materials. Durable materials optimally serve sports
+                              enthusiasts.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="post_item">
+                          <div class="post_featured">
+                            <a href="#" title="Asus">
+                              <img class="img-resize" style="padding-bottom:15px;"
+                                src="images/shoes/asus-gaming-rog-strix-scar-18-g834jy-i9-n6039w-1.jpg" alt="Asus">
+                            </a>
+                          </div>
+                          <div class="pro-text">
+                            <span class="post_info_item">
+
+                              Saturday, February 2, 2023
+
+                            </span>
+                          </div>
+                          <div class="pro-text">
+                            <h3 class="post_title">
+                              <a style=" color: black;
+                                  font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                Laptop Asus Gaming ROG Strix SCAR 18 G834JY i9 13980HX/64GB/2TB/16GB
+                                RTX4090/240Hz/Balo/Chuột/Win11(N6039W)
+                              </a>
+                            </h3>
+                          </div>
+                          <div style="text-align:center; padding-bottom: 30px;">
+                            <span>Asus Gaming Laptop ROG Strix SCAR 18 G834JY i9 (N6039W) promises to dominate the
+                              gaming laptop world with explosive performance from the all-new 13th generation Intel Core
+                              i9 processor, dedicated NVIDIA graphics and 18 inch 240 Hz super large screen, giving you
+                              a great gaming and working experience.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--gallery-->
+  </section> -->
+  <section class="section wrapper-home-newsletter">
+    <div class="container-fluid">
+      <div class="content-newsletter">
+        <h2>Sign up</h2>
+        <p>Sign up for the business newsletter to update new products, receive information about special offers and
+          information
+          believe
+          other discounts.</p>
+        <div class="form-newsletter">
+          <form action="" accept-charset="UTF-8" class="">
+            <div class="form-group">
+              <input type="hidden" id="contact_tags">
+              <input required="" type="email" value="" placeholder="Enter your email" aria-label="Email Address"
+                class="">
+              <button type="submit" class=""><span>To send</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Introduce
+              </h4>
+              <div class="footer-content">
+                <p>Online shopping site for the latest, best, and reputable products, helping you access the latest
+                  technology trends.</p>
+                <div class="social-list">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-google"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-youtube"></a>
+                  <a href="#" class="fab fa-skype"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-link">
+              <h4 class="footer-title">
+                JURIDICAL &amp; QUESTION
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#" title="Search">Search</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Introduce">Introduce</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Return Policy">Return Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Terms of Service">Terms of Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Contact Info
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li><span>Address:</span> 66 Vo Van Tan, Thanh Khe district, Da Nang city</li>
+                  <li><span>Phone:</span> 0949431757</li>
+                  <li><span>Fax:</span> 0376876576</li>
+                  <li><span>Mail:</span> dunien811@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          FANPAGE
+          </h4>
+          <div class="footer-content">
+            <div id="fb-root">
+              <div class="footer-static-content">
+                <div class="fb-page" data-href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                  data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                  data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                  <!-- <blockquote cite="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                        class="fb-xfbml-parse-ignore"><a
+                          href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/">AziWorld Viet Nam</a>
+                      </blockquote> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="main-footer--copyright">
+      <div class="container">
+        <hr>
+        <!-- <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2019 <a href="https://runner-inn.myharavan.com"> DN</a>. <a target="_blank"
+              href="https://www.facebook.com/henrynguyen202">Powered by HuniBlue</a></p>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

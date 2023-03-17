@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+  <link href="plugins/webfonts/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+  <title>News</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">FREE
+      SHIPPING WITH INTERNAL ORDER > 300K
+      - RETURN IN 15 DAYS - QUALITY GUARANTEE</a>
+  </div>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_page-0002.jpg" class="logo-top" alt="">
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME PAGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">INTRODUCE</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 100%;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+          color: #272727;
+          text-transform: uppercase;
+          margin: 3px 0 30px 0;
+          font-weight: 500; letter-spacing: 2px;">MENU</h3>
+          <div class="justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Product.html">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="introduce.html">INTRODUCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Search</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Search product">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+            </form>
+            <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+              <div class="resultsContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Cart</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              <table id="cart-view">
+                <tbody>
+                  <tr class="item_1">
+                    <td class="img"><a href="" title="Nike Air Max 90 Essential &quot;Grape&quot;"><img
+                          src="images/iphone-14-pro-max-purple-1.jpg"
+                          alt="/products/nike-air-max-90-essential-grape"></a></td>
+                    <td>
+                      <a class="pro-title-view" style="color: #272727" href=""
+                        title="Nike Air Max 90 Essential &quot;Grape&quot;">Phone Iphone 14 Pro Max </a>
+                      <span class="variant">Purple / 256GB</span>
+                      <span class="pro-quantity-view">1</span>
+                      <span class="pro-price-view">1.098.00$</span>
+                      <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                            class="fas fa-times"></i></a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="text-left">TOTAL AMOUNT:</td>
+                    <td class="text-right" id="total-view-cart">1.098.00$</td>
+                  </tr>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">View cart</a></td>
+                    <td><a href="" class="linktocheckout button dark">Pay</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click to get
+                  discount code
+                  price now!</span></a>
+            </div>
+          </div>
+        </div>
+</div>
+        <div class="icon-ol">
+          <a style="color: #272727" href="signin.html">
+            <i class="fas fa-user-alt"></i>
+          </a>
+          <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+            <i class="fas fa-search" style="color: black"></i>
+          </a>
+  
+          <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <!--Banner-->
+  <div>
+    <div>
+      <img src="images/collection_banner.jpg" alt="Products">
+    </div>
+  </div>
+  <div class="breadcrumb-shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+          <ol class="breadcrumb breadcrumb-arrows">
+            <li>
+              <a href="index.html">
+                <span>Home page</span>
+              </a>
+            </li>
+            <li>
+              <a href="Product.html">
+                <span>Category</span>
+              </a>
+            </li>
+            <li>
+              <span><span style="color: #777777">All products</span></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--List Prodct-->
+  <div class="container" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12 sidebar-fix">
+        <div class="wrap-filter">
+          <div class="box_sidebar">
+            <div class="block left-module">
+              <div class=" filter_xs">
+                <div class="group-menu">
+                  <div class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                    href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                    Danh mục Products
+                    <span><i class="fa fa-angle-down" data-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample1"></i></span>
+                  </div>
+                  <div class="block_content layered-category collapse" id="collapseExample1">
+                    <div class="layered-content card card-body" style="border:0;padding:0">
+                      <ul class="menuList-links">
+                        <li class=""><a href="home.html" title="HOME PAGE"><span>HOME PAGE</span></a></li>
+                        <li class=" active "><a href="product.html" title="PRODUCT"><span>PRODUCT</span></a>
+                        </li>
+                        <li class=""><a href="introduce.html" title="INTRODUCE"><span>INTRODUCE</span></a></li>
+                        <li class=""><a href="blog.html" title="BLOG"><span>BLOG</span></a></li>
+                        <li class=""><a href="contact.html" title="CONTACT"><span>CONTACT</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="layered">
+                  <p class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                    href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Filter Products
+                    <span><i class="fa fa-angle-down" data-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2"></i></span>
+                  </p>
+                  <div class="block_content collapse" id="collapseExample2">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="wrap-collection-title row">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <h1 class="title">
+              All products
+            </h1>
+            <div class="alert-no-filter"></div>
+          </div>
+          <div class="col-md-4 d-sm-none d-md-block d-none d-sm-block" style="float: left">
+            <div class="option browse-tags">
+              <span class="custom-dropdown custom-dropdown--grey">
+                <select class="sort-by custom-dropdown__select">
+                  <option value="price-ascending">Price: Ascending</option>
+                  <option value="price-descending">Price: Descending
+                  </option>
+                  <option value="title-ascending">Name: A-Z</option>
+                  <option value="title-descending">Name: Z-A</option>
+                  <option value="created-ascending">Oldest
+                  </option>
+                  <option value="created-descending">Latest
+                  </option>
+                  <option value="best-selling">Bestseller
+                  </option>
+                  <option value="quantity-descending">Inventory: Descending</option>
+                </select>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Phone iPhone 14 Pro Max 128GB" class="img-resize">
+                  <img src="images/shoes//1.jpg" alt="Phone iPhone 14 Pro Max 128GB" class="lazyloaded">
+                  <img src="images/shoes//1-1.jpg" alt="Phone iPhone 14 Pro Max 128GB" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                          font-size: 14px;text-decoration: none;" href="#"
+                    title="Phone iPhone 14 Pro Max 128GB" inspiration pack>
+                    Phone iPhone 14 Pro Max 128GB
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">1.011.80$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)" class="img-resize">
+                  <img src="images/shoes//2.jpg" alt="Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)" class="lazyloaded">
+                  <img src="images/shoes//2-2.jpg" alt="Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                          font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)" inspiration pack>
+                    Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">526.56$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Magsafe iPhone 14 Pro Max Plastic Case in Apple MPU73 Genuine" class="img-resize">
+                  <img src="images/shoes//3.jpg" alt="Magsafe iPhone 14 Pro Max Plastic Case in Apple MPU73 Genuine" class="lazyloaded">
+                  <img src="images/shoes//3-3.jpg" alt="Magsafe iPhone 14 Pro Max Plastic Case in Apple MPU73 Genuine" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                          font-size: 14px;text-decoration: none;" href="#"
+                    title="Magsafe iPhone 14 Pro Max Plastic Case in Apple MPU73 Genuine" inspiration pack>
+                    Magsafe iPhone 14 Pro Max Plastic Case in Apple MPU73 Genuine
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">53.54$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="iPad 10 WiFi 64GB Tablet" class="img-resize">
+                  <img src="images/shoes//4.jpg" alt="iPad 10 WiFi 64GB Tablet" class="lazyloaded">
+                  <img src="images/shoes//4-4.jpg" alt="iPad 10 WiFi 64GB Tablet" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                        font-size: 14px;text-decoration: none;" href="#"
+                    title="iPad 10 WiFi 64GB Tablet" inspiration pack>
+                    iPad 10 WiFi 64GB Tablet
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">526.56$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="iPad Pro M1 12.9-inch WiFi Cellular 128GB Tablet (2021)" class="img-resize">
+                  <img src="images/shoes//5.jpg" alt="iPad Pro M1 12.9-inch WiFi Cellular 128GB Tablet (2021)" class="lazyloaded">
+                  <img src="images/shoes//5-5.jpg" alt="iPad Pro M1 12.9-inch WiFi Cellular 128GB Tablet (2021)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                      font-size: 14px;text-decoration: none;" href="#"
+                    title="iPad Pro M1 12.9-inch WiFi Cellular 128GB Tablet (2021)" inspiration pack>
+                    iPad Pro M1 12.9-inch WiFi Cellular 128GB Tablet (2021)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">1.234.82$ </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Silent Rapoo M650 Lucky Cat . Bluetooth Wireless Mouse" class="img-resize">
+                  <img src="images/shoes//6.jpg" alt="Silent Rapoo M650 Lucky Cat . Bluetooth Wireless Mouse" class="lazyloaded">
+                  <img src="images/shoes//6-6.jpg" alt="Silent Rapoo M650 Lucky Cat . Bluetooth Wireless Mouse" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                    font-size: 14px;text-decoration: none;" href="#"
+                    title="Silent Rapoo M650 Lucky Cat . Bluetooth Wireless Mouse" inspiration pack>
+                    Silent Rapoo M650 Lucky Cat . Bluetooth Wireless Mouse
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">16.86$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Xiaomi Redmi Note 11 phone (4GB/128GB)" class="img-resize">
+                  <img src="images/shoes//7.jpg" alt="Xiaomi Redmi Note 11 phone (4GB/128GB)" class="lazyloaded">
+                  <img src="images/shoes//7-7.jpg" alt="Xiaomi Redmi Note 11 phone (4GB/128GB)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                    font-size: 14px;text-decoration: none;" href="#"
+                    title="Xiaomi Redmi Note 11 phone (4GB/128GB)" inspiration pack>
+                    Xiaomi Redmi Note 11 phone (4GB/128GB)
+                </div>
+                <div class="pro-price">
+                  <p class="">168.21$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop Apple MacBook Pro 14 M1 Pro 2021 10-core CPU/16GB/1TB SSD/16-core GPU (MKGQ3SA/A)" class="img-resize">
+                  <img src="images/shoes//8.jpg" alt="Laptop Apple MacBook Pro 14 M1 Pro 2021 10-core CPU/16GB/1TB SSD/16-core GPU (MKGQ3SA/A)" class="lazyloaded">
+                  <img src="images/shoes//8-8.jpg" alt="Laptop Apple MacBook Pro 14 M1 Pro 2021 10-core CPU/16GB/1TB SSD/16-core GPU (MKGQ3SA/A)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                  font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop Apple MacBook Pro 14 M1 Pro 2021 10-core CPU/16GB/1TB SSD/16-core GPU (MKGQ3SA/A)" inspiration pack>
+                    Laptop Apple MacBook Pro 14 M1 Pro 2021 10-core CPU/16GB/1TB SSD/16-core GPU (MKGQ3SA/A)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">2.065.34$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop MacBook Pro 14 inch M2 Pro 2023 10-core CPU/16GB/512GB/16-core GPU" class="img-resize">
+                  <img src="images/shoes//8.jpg"
+                    alt="Laptop MacBook Pro 14 inch M2 Pro 2023 10-core CPU/16GB/512GB/16-core GPU" class="lazyloaded">
+                  <img src="images/shoes//8-8.jpg" alt="Laptop MacBook Pro 14 inch M2 Pro 2023 10-core CPU/16GB/512GB/16-core GPU" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                  font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop MacBook Pro 14 inch M2 Pro 2023 10-core CPU/16GB/512GB/16-core GPU" inspiration pack>
+                    Laptop MacBook Pro 14 inch M2 Pro 2023 10-core CPU/16GB/512GB/16-core GPU 
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">2.107.92$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)" class="img-resize">
+                  <img src="images/shoes//10.jpg"
+                    alt="Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)" class="lazyloaded">
+                  <img src="images/shoes//10-10.jpg" alt="Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                  font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)" inspiration pack>
+                    Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">357.93$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop HP Probook 450 G9 i5 1235U/8GB/512GB/Win11 (6M0Y9PA)" class="img-resize">
+                  <img src="images/shoes//11.jpg"
+                    alt="Laptop HP Probook 450 G9 i5 1235U/8GB/512GB/Win11 (6M0Y9PA)" class="lazyloaded">
+                  <img src="images/shoes//11-11.jpg" alt="Laptop HP Probook 450 G9 i5 1235U/8GB/512GB/Win11 (6M0Y9PA)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop HP Probook 450 G9 i5 1235U/8GB/512GB/Win11 (6M0Y9PA)" inspiration pack>
+                    Laptop HP Probook 450 G9 i5 1235U/8GB/512GB/Win11 (6M0Y9PA)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">813.24$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="HP 107w WiFi Black & White Laser Printer (4ZB78A)" class="img-resize">
+                  <img src="images/shoes//12.jpg"
+                    alt="HP 107w WiFi Black & White Laser Printer (4ZB78A)" class="lazyloaded">
+                  <img src="images/shoes//12-12.jpg" alt="HP 107w WiFi Black & White Laser Printer (4ZB78A)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="HP 107w WiFi Black & White Laser Printer (4ZB78A)" inspiration pack>
+                    HP 107w WiFi Black & White Laser Printer (4ZB78A)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">126.48$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title=" iMac 24 inch 2021 4.5K M1/256GB/8GB/7-core GPU (MGTF3SA/A) " class="img-resize">
+                  <img src="images/shoes//13.jpg"
+                    alt=" iMac 24 inch 2021 4.5K M1/256GB/8GB/7-core GPU (MGTF3SA/A) " class="lazyloaded">
+                  <img src="images/shoes//13-13.jpg" alt=" iMac 24 inch 2021 4.5K M1/256GB/8GB/7-core GPU (MGTF3SA/A) " class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title=" iMac 24 inch 2021 4.5K M1/256GB/8GB/7-core GPU (MGTF3SA/A) " inspiration pack>
+                    iMac 24 inch 2021 4.5K M1/256GB/8GB/7-core GPU (MGTF3SA/A) 
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">1.011.38$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Lenovo IdeaCentre AIO 3 24ITL6 i5 1135G7/8GB/256GB/23.8`FullHD/Bàn phím&Chuột/Win11 (F0G000XBVN)" class="img-resize">
+                  <img src="images/shoes//14.jpg"
+                    alt="Lenovo IdeaCentre AIO 3 24ITL6 i5 1135G7/8GB/256GB/23.8`FullHD/Bàn phím&Chuột/Win11 (F0G000XBVN)" class="lazyloaded">
+                  <img src="images/shoes//14-14.jpg" alt="Lenovo IdeaCentre AIO 3 24ITL6 i5 1135G7/8GB/256GB/23.8`FullHD/Bàn phím&Chuột/Win11 (F0G000XBVN)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Lenovo IdeaCentre AIO 3 24ITL6 i5 1135G7/8GB/256GB/23.8`FullHD/Bàn phím&Chuột/Win11 (F0G000XBVN)" inspiration pack>
+                    Lenovo IdeaCentre AIO 3 24ITL6 i5 1135G7/8GB/256GB/23.8"FullHD/Bàn phím&Chuột/Win11 (F0G000XBVN)
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">688.45$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Laptop HP Omen 16 n0085AX R9 6900HX/32GB/1TB SSD/8GB RTX3070Ti/165Hz/Win11 (7C144PA)" class="img-resize">
+                  <img src="images/shoes//16.jpg"
+                    alt="Laptop HP Omen 16 n0085AX R9 6900HX/32GB/1TB SSD/8GB RTX3070Ti/165Hz/Win11 (7C144PA)" class="lazyloaded">
+                  <img src="images/shoes//16-16.jpg" alt="Laptop HP Omen 16 n0085AX R9 6900HX/32GB/1TB SSD/8GB RTX3070Ti/165Hz/Win11 (7C144PA)" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Laptop HP Omen 16 n0085AX R9 6900HX/32GB/1TB SSD/8GB RTX3070Ti/165Hz/Win11 (7C144PA)" inspiration pack>
+                    Laptop HP Omen 16 n0085AX R9 6900HX/32GB/1TB SSD/8GB RTX3070Ti/165Hz/Win11 (7C144PA)
+                  </a>
+                 </div>
+                <div class="pro-price">
+                  <p class="">2.440.56$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Samsung Galaxy Tab S8 Ultra 5G Tablet" class="img-resize">
+                  <img src="images/shoes//17.jpg"
+                    alt="Samsung Galaxy Tab S8 Ultra 5G Tablet" class="lazyloaded">
+                  <img src="images/shoes//17-17.jpg" alt="Samsung Galaxy Tab S8 Ultra 5G Tablet" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Samsung Galaxy Tab S8 Ultra 5G Tablet" inspiration pack>
+                    Samsung Galaxy Tab S8 Ultra 5G Tablet
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">1.180.02$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title=" Nokia phone 5710" class="img-resize">
+                  <img src="images/shoes//18.jpg" alt=" Nokia phone 5710" class="lazyloaded">
+                  <img src="images/shoes//18-18.jpg" alt=" Nokia phone 5710" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title=" Nokia phone 5710" inspiration pack>
+                    Nokia phone 5710
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">71.67$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Mobile phone Mobell Rock 4" class="img-resize">
+                  <img src="images/shoes//19.jpg" alt="Mobile phone Mobell Rock 4" class="lazyloaded">
+                  <img src="images/shoes//19-19.jpg" alt="Mobile phone Mobell Rock 4" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Mobile phone Mobell Rock 4" inspiration pack>
+                    Mobile phone Mobell Rock 4
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">34.15$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Apple Watch Series 7 GPS 41mm" class="img-resize">
+                  <img src="images/shoes//20.jpg" alt="Apple Watch Series 7 GPS 41mm" class="lazyloaded">
+                  <img src="images/shoes//20-20.jpg" alt="Apple Watch Series 7 GPS 41mm" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Apple Watch Series 7 GPS 41mm" inspiration pack>
+                    Apple Watch Series 7 GPS 41mm
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">295.11$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Suunto 7 50mm Smart Watch" class="img-resize">
+                  <img src="images/shoes//21.jpg" alt="Suunto 7 50mm Smart Watch" class="lazyloaded">
+                  <img src="images/shoes//21-21.jpg" alt="Suunto 7 50mm Smart Watch" class="lazyloaded">
+                </a>
+                <div class="button-add">
+                  <button type=submit title="Buy now" class="action">Buy now</button>
+                  <button type="submit" title="Add to Basket" class="action add-to-cart">Add to Basket</button>
+                </div>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a style=" color: black;
+                                                font-size: 14px;text-decoration: none;" href="#"
+                    title="Suunto 7 50mm Smart Watch" inspiration pack>
+                    Suunto 7 50mm Smart Watch
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">210.79$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sortpagibar pagi clearfix text-center">
+          <div id="pagination" class="clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <span class="page-node current">1</span>
+              <a class="page-node" href="">2</a>
+              <a class="next" href="">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 31 10" style="enable-background:new 0 0 31 10; width: 31px; height: 10px;"
+                  xml:space="preserve">
+                  <polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon>
+                </svg> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--gallery-->
+  <section class="section wrapper-home-newsletter">
+    <div class="container-fluid">
+      <div class="content-newsletter">
+        <h2>Sign up</h2>
+        <p>Sign up for the business newsletter to update new products, receive information about special offers and
+          information
+          believe
+          other discounts.</p>
+        <div class="form-newsletter">
+          <form action="" accept-charset="UTF-8" class="">
+            <div class="form-group">
+              <input type="hidden" id="contact_tags">
+              <input required="" type="email" value="" placeholder="Enter your email" aria-label="Email Address"
+                class="">
+              <button type="submit" class=""><span>To send</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                INTRODUCE
+              </h4>
+              <div class="footer-content">
+                <p>Online shopping site for the latest, best, and reputable products, helping you access the latest
+                  technology trends.</p>
+                <div class="social-list">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-google"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-youtube"></a>
+                  <a href="#" class="fab fa-skype"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-link">
+              <h4 class="footer-title">
+                JURIDICAL &amp; QUESTION
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#" title="Search">Search</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Introduce">Introduce</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Return Policy">Return Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Terms of Service">Terms of Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Contact Info
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li><span>Address:</span> 66 Vo Van Tan, Thanh Khe district, Da Nang city</li>
+                  <li><span>Phone:</span> 0949431757</li>
+                  <li><span>Fax:</span> 0376876576</li>
+                  <li><span>Mail:</span> dunien811@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                FANPAGE
+              </h4>
+              <div class="footer-content">
+                <div id="fb-root">
+                  <div class="footer-static-content">
+                    <div class="fb-page" data-href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                      data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                      <!-- <blockquote cite="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                        class="fb-xfbml-parse-ignore"><a
+                          href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/">AziWorld Viet Nam</a>
+                      </blockquote> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer--copyright">
+      <div class="container">
+        <hr>
+        <!-- <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2019 <a href="https://runner-inn.myharavan.com"> DN</a>. <a target="_blank"
+              href="https://www.facebook.com/henrynguyen202">Powered by HuniBlue</a></p>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+  <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+  <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="plugins/bootstrap/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+  <script src="plugins/uikit/uikit.min.js"></script>
+  <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>
