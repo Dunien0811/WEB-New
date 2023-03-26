@@ -710,3 +710,22 @@ margin-bottom: -1px;
 .scroll-content {
   height: 10px; /* Chiều cao của nội dung */
 }
+/*  */
+.m-3{
+  margin: 0.75rem!important;
+
+}
+.mx-2{
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  background-color: #efefef;
+}
+.title.is-6 {
+  font-size: 20px ;
+}
+.px-3 {
+  padding-right: 0.75rem!important;
+  /* width: 100%; */
+}

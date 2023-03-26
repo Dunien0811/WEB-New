@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style_pr.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+
+    <link href="plugins/webfonts/font.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+    <title>Detailed product page</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <a style="color: #ffffff;text-decoration: none;" href="index.html">FREE
+            SHIPPING WITH INTERNAL ORDER > 300K
+            - RETURN IN 15 DAYS - QUALITY GUARANTEE</a>
+    </div>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_page-0002.jpg" class="logo-top" alt="">
+            </a>
+            <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME PAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">PRODUCT</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">INTRODUCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="background: white;
+        width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+                    <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">MENU</h3>
+                    <div class="justify-content-md-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME PAGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">PRODUCT</a>
+                            </li>
+                            <a class="nav-link" href="introduce.html">INTRODUCE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+                    <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Search</h3>
+                    <div class="search-box wpo-wrapper-search">
+                        <form action="search" class="searchform searchform-categoris ultimate-search">
+                            <div class="wpo-search-inner" style="display:inline">
+                                <input type="hidden" name="type" value="product">
+                                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                                    class="searchinput input-search search-input" type="text" size="20"
+                                    placeholder="Search product">
+                            </div>
+                            <button type="submit" class="btn-search btn" id="search-header-btn">
+                                <i style="font-weight:bold" class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults"
+                            style="display: none">
+                            <div class="resultsContent"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="    background: white;
+                  width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+                    <h3 style="font-size: 14px;
+                      color: #272727;
+                      text-transform: uppercase;
+                      margin: 3px 0 30px 0;
+                      font-weight: 500; letter-spacing: 2px;">Cart</h3>
+                    <div class="site-nav-container-last" style="color:#272727">
+                        <div class="cart-view clearfix">
+                            <table id="cart-view">
+                                <tbody>
+                                    <tr class="item_1">
+                                        <td class="img"><a href=""
+                                                title="Nike Air Max 90 Essential &quot;Grape&quot;"><img
+                                                    src="images/iphone-14-pro-max-purple-1.jpg"
+                                                    alt="/products/nike-air-max-90-essential-grape"></a></td>
+                                        <td>
+                                            <a class="pro-title-view" style="color: #272727" href=""
+                                                title="Nike Air Max 90 Essential &quot;Grape&quot;">Phone Iphone 14 Pro
+                                                Max </a>
+                                            <span class="variant">Purple / 256GB</span>
+                                            <span class="pro-quantity-view">1</span>
+                                            <span class="pro-price-view">1.098.00$</span>
+                                            <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                                                        class="fas fa-times"></i></a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span class="line"></span>
+                            <table class="table-total">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-left">TOTAL AMOUNT:</td>
+                                        <td class="text-right" id="total-view-cart">1.098.00$</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="distance-td"><a href="" class="linktocart button dark">View cart</a>
+                                        </td>
+                                        <td><a href="" class="linktocheckout button dark">Pay</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <a href="" target="_blank" class="button btn-check"
+                                style="text-decoration:none;"><span>Click to get
+                                    discount code
+                                    price now!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-ol">
+                <a style="color: #272727" href="signin.html">
+                    <i class="fas fa-user-alt"></i>
+                </a>
+                <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+                    <i class="fas fa-search" style="color: black"></i>
+                </a>
+
+                <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+    <!--Banner-->
+    <div>
+        <div>
+            <img src="images/collection_banner.jpg" alt="Products">
+        </div>
+    </div>
+    <div class="breadcrumb1-shop">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5"> -->
+            <!-- <ol class="breadcrumb1 breadcrumb1-arrows"> --><!-- <span>Home page</span> -->
+            <!-- <li>
+              
+            </li>
+            <li>
+               <span><span style="color: #777777">Contact</span></span> -->
+            <!-- </li> -->
+            </ol>
+        </div>
+    </div>
+    </div>
+    </div>
+    <section>
+        <div class="container1">
+            <div class="single-product">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="product-image">
+                            <div class="product-image-main">
+                                <img src="images/product_sp/ap7(1).jfif" alt="" id="product-main-image">
+                            </div>
+                            <div class="product-image-slider">
+                                <img src="images/product_sp/ap7(1).jfif" alt="" class="image-list">
+                                <img src="images/product_sp/ap7(2).jfif" alt="" class="image-list">
+                                <img src="images/product_sp/ap7.jfif" alt="" class="image-list">
+                                <img src="images/product_sp/apple-watch-series-7-thie-t-ke.jpg" alt=""
+                                    class="image-list">
+                                <img src="images/product_sp/ap7(5).jfif" alt="" class="image-list">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="breadcrumb1">
+                            <span><a href="index.html">Home page</a></span>
+                            <span><a href="product.html">Product</a></span>
+                            <!-- <span class="active">T-shirt</span> -->
+                        </div>
+
+                        <div class="product">
+                            <div class="product-title">
+                                <h2>Apple Watch Series 7 45mm (4G) Aluminum Rubber Band | Genuine VN/A</h2>
+                            </div>
+                            <div class="product-rating">
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span class="review">(47 Review)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="offer-price">4.210.7$</span>
+                                <span class="sale-price">4.499.9$</span>
+                            </div>
+
+                            <div class="product-details">
+                                <h3>Description</h3>
+                                <p>Following the success of Apple Watch Series 6, this year's new generation of Apple
+                                    Watch will have two versions in 41mm and 45mm sizes. In which, the Apple Wach 7 45mm
+                                    4G version has the same design and features as its 45mm Apple Watch 7 brother, but
+                                    instead of wifi connection, this 45mm Apple Series 7 smartwatch will have a
+                                    convenient 4G connection. .</p>
+                            </div>
+                            <div class="product-type">
+                                <h4>Type</h4>
+                                <div class="type-layout">
+                                    <input type="radio" name="type" value="S" id="1" class="type-input">
+                                    <label for="1" class="type">45mm</label>
+
+                                    <input type="radio" name="type" value="M" id="2" class="type-input">
+                                    <label for="2" class="type">41mm</label>
+                                </div>
+                            </div>
+
+                            <span class="divider"></span>
+
+                            <div class="product-btn-group">
+                                <div class="button buy-now"><i class='bx bxs-zap'></i> Buy Now</div>
+                                <div class="button add-cart"><i class='bx bxs-cart'></i> Add to Cart</div>
+                                <div class="button heart"><i class='bx bxs-heart'></i> Add to Wishlist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-content-product" style="display:flex ;">
+            <div class="block-content-product-left">
+                <div class="cps-block-content" style="max-height: 100%; ">
+                    <div class="ksp-content p-2 mb-2">
+                        <h2 class="ksp-title has-text-centered" style=" text-align: center!important;
+                      ">SPECIAL CHARACTERISTICS</h2>
+                        <div>
+                            <ul style="list-style: none;">
+                                <li>Esim support allows you to make calls right on the watch </li>
+                                <li>The always-on display function keeps the time display active, saving more battery
+                                </li>
+                                <li> Comfortable to use in the pool or outdoors with IP6X dustproof standard, water
+                                    resistant up to 50m</li>
+                                <li> Measure heart rate, blood oxygen, sleep monitoring and many built-in health
+                                    features
+                                </li>
+                                <li>Type C charging port, 45 minutes fast charging for 80% battery</li>
+                                <li> Esim support allows you to make calls right on the watch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="text-align: justify;"><strong>Apple Watch Series 7 45mm 4G –
+                            </strong><strong>Class-worthy technology </strong><strong> </strong><strong>
+                            </strong><strong></strong>
+                        </h2>
+                        <p style="text-align: justify;"><a href="#" title="ip14plus" target="_self"><strong>Apple
+                                    technology company has recently launched a series of new products,
+                                </strong></a> including the
+                            Apple Watch Series 7 45mm 4G . With upgrades in screen area, health monitoring
+                            function and many other points, this Apple Watch Series 7 smartwatch promises to
+                            satisfy the strict requirements of users.</p>
+                        <h3 style="text-align: justify;"><strong>45mm screen, expand the display area</strong>
+                        </h3>
+                        <p style="text-align: justify;">The screen of the Apple Watch Series 7 45mm 4G is enlarged to
+                            45mm instead of 44mm compared to the previous Apple Watch Series 6. The screen bezel is
+                            thinner (approximately 1.7mm) to improve the display area, which enhances the use and
+                            reading experience. With Retina Always On technology and touch-integrated OLED panels, the
+                            display will be 70% brighter than its predecessors.</p>
+                        <p style="text-align: justify;"><img src="images/product_sp/ap7(10).jpg" alt="#" loading="lazy">
+                        </p>
+                        <p style="text-align: justify;">Apple Watch Series 7 collection with a breakthrough in color,
+                            making a strong impression on users. With the aluminum version, there will be 5 color
+                            options, respectively: green, blue, black, red and metallic, suitable for many different
+                            customers.<a href="#" title="#" target="_blank"></a></p>
+                        <h3 style="text-align: justify;"><strong>33% more impressive fast charging
+                            </strong>
+                        </h3>
+                        <p style="text-align: justify;">The charging system for the product is upgraded, reducing
+                            charging time, increasing fast charging. With just 8 minutes of charging, Apple Watch can
+                            provide up to 8 hours of sleep tracking or just 45 minutes of charging from 0% to 80%.
+                            According to research, the Series 7 generation charges 33% faster than Series 6, meeting the
+                            higher needs of users to study, work, and exercise.
+                        </p>
+                        <p style="text-align: justify;"><img src="images/product_sp/ap7(11).webp"
+                                alt="Màn hình Dynamic Island" loading="lazy"></p>
+                        <p style="text-align: justify;"></p>
+                        <!-- <h2 style="text-align: justify;"><strong>Mua laptop MSI Modern 14 B11MOU-1032VN giá rẻ tại
+                CellphoneS</strong></h2>
+            <p style="text-align: justify;">Nếu như bạn đang có nhu cầu mua một chiếc laptop có thiết kế thuận
+              tiện để mang đi nhưng vẫn mạnh mẽ hoạt động ở mọi nơi thì đừng quên MSI Modern 14 B11MOU-1032VN
+              của hệ thống CellphoneS nhé vì với mức giá siêu rẻ phù hợp với học sinh và sinh viên bạn đã có
+              thể sở hữu nó trong tay.</p> -->
+                    </div>
+                    <div class="cps-block-content_btn-showmore" style="display:block;"><a class="btn-show-more">
+                            See more  <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="10"
+                                    height="10">
+                                    <path
+                                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                                    </path>
+                                </svg></div></a></div>
+                </div>
+            </div>
+            <div class="block-content-product-right" style="position: relative;
+      right: 20px; top: 19px;">
+                <div class="cps-block-technicalInfo mb-3 ml-3 px-3 pt-3 pb-1">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center"
+                        style="margin-bottom: -1rem !important;">
+                        <h2 class="title is-6 mb-3">Specifications</h2> <!---->
+                    </div>
+                    <ul class="technical-content">
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Screen technology</p>
+                            <div>Always-on Retina display</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Face Diameter</p>
+                            <div>45mm</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Battery life</p>
+                            <div style="width: 50%;">18 hours of use</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Manufacturer</p>
+                            <div style="width: 50%;">Genuine Apple</div>
+                        </li>
+                    </ul>
+                    <div class="open-modal-btn">
+                        <button class="button my-3 is-flex is-justify-content-center"
+                            style="padding: 10px 10px 10px 50px ;margin: .75rem!important;">
+                            See detailed configuration
+                            <div class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    width="10" height="10">
+                                    <path
+                                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                                    </path>
+                                </svg></div>
+                        </button>
+                    </div>
+                    <div class="modal hide ">
+                        <div class="modal_inner">
+                            <div class="scroll-container">
+                                <div class="modal_header">
+                                    Specifications
+                                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="scroll-content">
+                                    <!-- Nội dung cần cuộn -->
+                                    <div class="modal_body" style="margin: .75rem!important;">
+                                        <ul class="technical-content-modal">
+                                            <li class="technical-content-modal-item m-3">
+                                                <p class="title is-6 m-2">Screen technology</p>
+                                                <div class="modal-item-description mx-2">
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Screen Technology</p>
+                                                        <div>Always-on Retina display</div>
+                                                    </div>
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Face Diameter</p>
+                                                        <div>45mm</div>
+                                                    </div>
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Face material</p>
+                                                        <div>Tempered glass</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="technical-content-modal-item m-3">
+                                                <p class="title is-6 m-2">Other parameters</p>
+                                                <div class="modal-item-description mx-2">
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Waterproof</p>
+                                                        <div style="width: 50%;">IP6X (Swimming, dustproof)</div>
+                                                    </div>
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Manufacturer</p>
+                                                        <div style="width: 50%;">Genuine Apple</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="technical-content-modal-item m-3">
+                                                <p class="title is-6 m-2">The battery</p>
+                                                <div class="modal-item-description mx-2">
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Battery life</p>
+                                                        <div style="width: 50%;">18 hours of use</div>
+                                                    </div>
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Charging time</p>
+                                                        <div style="width: 50%;">45 minutes charge 80%
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Charging port</p>
+                                                        <div style="width: 50%;">USB-C
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="technical-content-modal-item m-3">
+                                                <p class="title is-6 m-2">Hardware</p>
+                                                <div class="modal-item-description mx-2">
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Operating system</p>
+                                                        <div>WatchOS</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="technical-content-modal-item m-3">
+                                                <p class="title is-6 m-2">Salient features</p>
+                                                <div class="modal-item-description mx-2">
+                                                    <div
+                                                        class="px-3 py-2 is-flex is-align-items-center is-justify-content-space-between">
+                                                        <p>Smart feature</p>
+                                                        <div style="width: 50%;">Measure heart rate, blood oxygen
+                                                            Fall detection
+                                                            Calorie consumption measurement
+                                                            Sports mode
+                                                            Connect headphones</div>
+                                                    </div>
+
+
+                                            </li>
+                                           
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_footer" style="top: 20px;">
+                                <button>Cloes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!----> <!---->
+            </div>
+        </div>
+    </section>
+    <!--gallery-->
+    <section class="section wrapper-home-newsletter">
+        <div class="container-fluid">
+            <div class="content-newsletter">
+                <h2>Sign up</h2>
+                <p>Sign up for the business newsletter to update new products, receive information about special offers
+                    and
+                    information
+                    believe
+                    other discounts.</p>
+                <div class="form-newsletter">
+                    <form action="" accept-charset="UTF-8" class="">
+                        <div class="form-group">
+                            <input type="hidden" id="contact_tags">
+                            <input required="" type="email" value="" placeholder="Enter your email"
+                                aria-label="Email Address" class="">
+                            <button type="submit" class=""><span>To send</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                INTRODUCE
+                            </h4>
+                            <div class="footer-content">
+                                <p>Online shopping site for the latest, best, and reputable products, helping you access
+                                    the latest
+                                    technology trends.</p>
+                                <div class="social-list">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-google"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                    <a href="#" class="fab fa-skype"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-link">
+                            <h4 class="footer-title">
+                                JURIDICAL &amp; QUESTION
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li class="item">
+                                        <a href="#" title="Search">Search</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Introduce">Introduce</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Return Policy">Return Policy</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Privacy Policy">Privacy Policy</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Terms of Service">Terms of Service</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Contact Info
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li><span>Address:</span> 66 Vo Van Tan, Thanh Khe district, Da Nang city</li>
+                                    <li><span>Phone:</span> 0949431757</li>
+                                    <li><span>Fax:</span> 0376876576</li>
+                                    <li><span>Mail:</span> dunien811@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                FANPAGE
+                            </h4>
+                            <div class="footer-content">
+                                <div id="fb-root">
+                                    <div class="footer-static-content">
+                                        <div class="fb-page"
+                                            data-href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                                            data-tabs="timeline" data-width="" data-height="215"
+                                            data-small-header="false" data-adapt-container-width="true"
+                                            data-hide-cover="false" data-show-facepile="true">
+                                            <!-- <blockquote cite="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                        class="fb-xfbml-parse-ignore"><a
+                          href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/">AziWorld Viet Nam</a>
+                      </blockquote> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer--copyright">
+            <div class="container">
+                <hr>
+                <!-- <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2019 <a href="https://runner-inn.myharavan.com"> DN</a>. <a target="_blank"
+              href="https://www.facebook.com/henrynguyen202">Powered by HuniBlue</a></p>
+        </div> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script> -->
+<!-- <script src="js/jquery.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+<script src="js/productsp.js"></script>
+
+</html>

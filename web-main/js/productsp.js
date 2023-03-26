@@ -55,10 +55,10 @@ var btnShowMore = document.querySelector(".btn-show-more");
 btnShowMore.addEventListener("click", function() {
   if (blockContentProductLeft.style.maxHeight) {
     blockContentProductLeft.style.maxHeight = null;
-    btnShowMore.innerHTML = "Xem thêm";
+    btnShowMore.innerHTML = "See more";
   } else {
     blockContentProductLeft.style.maxHeight = blockContentProductLeft.scrollHeight + "1000px";
-    btnShowMore.innerHTML = "Rút gọn";
+    btnShowMore.innerHTML = "Compact";
   }
 });
 //thanh trượt 

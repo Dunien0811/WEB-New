@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style_pr.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+
+    <link href="plugins/webfonts/font.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+    <title>Detailed product page</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <a style="color: #ffffff;text-decoration: none;" href="index.html">FREE
+            SHIPPING WITH INTERNAL ORDER > 300K
+            - RETURN IN 15 DAYS - QUALITY GUARANTEE</a>
+    </div>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_page-0002.jpg" class="logo-top" alt="">
+            </a>
+            <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME PAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product.html">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce.html">INTRODUCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="background: white;
+        width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+                    <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">MENU</h3>
+                    <div class="justify-content-md-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME PAGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Product.html">PRODUCT</a>
+                            </li>
+                            <a class="nav-link" href="introduce.html">INTRODUCE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+                    <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Search</h3>
+                    <div class="search-box wpo-wrapper-search">
+                        <form action="search" class="searchform searchform-categoris ultimate-search">
+                            <div class="wpo-search-inner" style="display:inline">
+                                <input type="hidden" name="type" value="product">
+                                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                                    class="searchinput input-search search-input" type="text" size="20"
+                                    placeholder="Search product">
+                            </div>
+                            <button type="submit" class="btn-search btn" id="search-header-btn">
+                                <i style="font-weight:bold" class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults"
+                            style="display: none">
+                            <div class="resultsContent"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar" style="    background: white;
+                  width: 350px;">
+
+                    <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+                    <h3 style="font-size: 14px;
+                      color: #272727;
+                      text-transform: uppercase;
+                      margin: 3px 0 30px 0;
+                      font-weight: 500; letter-spacing: 2px;">Cart</h3>
+                    <div class="site-nav-container-last" style="color:#272727">
+                        <div class="cart-view clearfix">
+                            <table id="cart-view">
+                                <tbody>
+                                    <tr class="item_1">
+                                        <td class="img"><a href=""
+                                                title="Nike Air Max 90 Essential &quot;Grape&quot;"><img
+                                                    src="images/samsung.jpg"
+                                                    alt="/products/nike-air-max-90-essential-grape"></a></td>
+                                        <td>
+                                            <a class="pro-title-view" style="color: #272727" href=""
+                                                title="Nike Air Max 90 Essential &quot;Grape&quot;">Samsung Galaxy S21
+                                                FE 5G phone </a>
+                                            <span class="variant">Purple / 256GB</span>
+                                            <span class="pro-quantity-view">1</span>
+                                            <span class="pro-price-view">1.079.00$</span>
+                                            <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                                                        class="fas fa-times"></i></a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span class="line"></span>
+                            <table class="table-total">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-left">TOTAL AMOUNT:</td>
+                                        <td class="text-right" id="total-view-cart">1.079.00$</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="distance-td"><a href="" class="linktocart button dark">View cart</a>
+                                        </td>
+                                        <td><a href="" class="linktocheckout button dark">Pay</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <a href="" target="_blank" class="button btn-check"
+                                style="text-decoration:none;"><span>Click to get
+                                    discount code
+                                    price now!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-ol">
+                <a style="color: #272727" href="signin.html">
+                    <i class="fas fa-user-alt"></i>
+                </a>
+                <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+                    <i class="fas fa-search" style="color: black"></i>
+                </a>
+
+                <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+    <!--Banner-->
+    <div>
+        <div>
+            <img src="images/collection_banner.jpg" alt="Products">
+        </div>
+    </div>
+    <div class="breadcrumb1-shop">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5"> -->
+            <!-- <ol class="breadcrumb1 breadcrumb1-arrows"> --><!-- <span>Home page</span> -->
+            <!-- <li>
+              
+            </li>
+            <li>
+               <span><span style="color: #777777">Contact</span></span> -->
+            <!-- </li> -->
+            </ol>
+        </div>
+    </div>
+    </div>
+    </div>
+    <section>
+        <div class="container1">
+            <div class="single-product">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="product-image">
+                            <div class="product-image-main">
+                                <img src="images/product_sp/50-50.jpg" alt="" id="product-main-image">
+                            </div>
+                            <div class="product-image-slider">
+                                <img src="images/product_sp/51-51.jpg" alt="" class="image-list">
+                                <img src="images/product_sp/52-52.jpg" alt="" class="image-list">
+                                <img src="images/product_sp/53-53.jpg" alt="" class="image-list">
+                                <img src="images/product_sp/54-54.jpg" alt="" class="image-list">
+                                <img src="images/product_sp/55-55.jpg" alt="" class="image-list">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="breadcrumb1">
+                            <span><a href="index.html">Home page</a></span>
+                            <span><a href="product.html">Product</a></span>
+                            <!-- <span class="active">T-shirt</span> -->
+                        </div>
+
+                        <div class="product">
+                            <div class="product-title">
+                                <h2>Samsung Galaxy S21 FE </h2>
+                            </div>
+                            <div class="product-rating">
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span><i class="bx bxs-star"></i></span>
+                                <span class="review">(47 Review)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="offer-price">463.22$</span>
+                                <span class="sale-price">533.22$</span>
+                            </div>
+
+                            <div class="product-details">
+                                <h3>Description</h3>
+                                <p>Samsung Galaxy S21 FE (8GB - 128GB) is powered by the "homegrown" Exynos 2100
+                                    processor combined with 8GB of RAM to deliver strong performance and 128GB of
+                                    internal memory to help users comfortably store photos, video data.</p>
+                            </div>
+                            <div class="product-type">
+                                <h4>Type</h4>
+                                <div class="type-layout">
+                                    <input type="radio" name="type" value="S" id="1" class="type-input">
+                                    <label for="1" class="type">6GB-128GB</label>
+
+                                    <input type="radio" name="type" value="M" id="2" class="type-input">
+                                    <label for="2" class="type">8GB-256GB</label>
+
+                                    <input type="radio" name="type" value="L" id="3" class="type-input">
+                                    <label for="3" class="type">8GB-1288GB</label>
+                                </div>
+                            </div>
+
+                            <span class="divider"></span>
+
+                            <div class="product-btn-group">
+                                <div class="button buy-now"><i class='bx bxs-zap'></i> Buy Now</div>
+                                <div class="button add-cart"><i class='bx bxs-cart'></i> Add to Cart</div>
+                                <div class="button heart"><i class='bx bxs-heart'></i> Add to Wishlist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-content-product" style="display:flex ;">
+            <div class="block-content-product-left">
+                <div class="cps-block-content" style="max-height: 100%; ">
+                    <div class="ksp-content p-2 mb-2">
+                        <h2 class="ksp-title has-text-centered" style=" text-align: center!important;
+                      ">SPECIAL CHARACTERISTICS</h2>
+                        <div>
+                            <ul style="list-style: none;">
+                                <li>High-end design - Exquisite beauty and trendy colors </li>
+                                <li> Full frame - 6.4" screen, high brightness and 120Hz . refresh rate</li>
+                                <li> Sharpen each frame - Triple 12MP cameras, support 4K video recording, EIS</li>
+                                <li>Smooth every task - Powerful 5nm process Exynos 2100 chip</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="text-align: justify;"><strong>Samsung Galaxy S21 FE 5G phonesold out on the first day
+                                of sale –
+                            </strong><strong>Set
+                                luxury </strong><strong>design, </strong><strong>performance
+                            </strong><strong>strong</strong>
+                        </h2>
+                        <p style="text-align: justify;"><a href="#" title="Laptop MSI chính hãng"
+                                target="_self"><strong>Samsung Galaxy S21 FE 5G phone</strong></a> is a smartphone with
+                            a screen
+                            best picture</p>
+                        <h3 style="text-align: justify;"><strong>Review Samsung Galaxy S21 FE 5G phone - Super product
+                                affirms its status
+                                grant</strong></h3>
+                        <p style="text-align: justify;">The Samsung Galaxy S21 FE 5G phone phones are named in the ranks
+                            of super products
+                            new generation smartphone by leading technology, perfect design and many amazing
+                            breakthroughs. Completeness
+                            The perfection of the latest generation of Apple's Flagship is made up of the unification of
+                            design elements, display,
+                            configuration, operating system, camera, battery and improved features.</p>
+                        <p style="text-align: justify;"><img src="images/product_sp/50-50.jpg" alt="#" loading="lazy">
+                        </p>
+                        <p style="text-align: justify;">In addition, in terms of sound, DxOMark also rates the product
+                            from Apple
+                            suitable for listening to musicals, concerts, plays, watching movies and playing games.<a
+                                href="#" title="#" target="_blank"></a>In the product list there are
+                            Good sound quality, Samsung Galaxy S21 FE 5G phone ranked in 9th place with 142 points. </p>
+                        <h3 style="text-align: justify;"><strong>Dynamic Island screen - The disappearance of the
+                                replacement notch
+                                by pill design</strong>
+                        </h3>
+                        <p style="text-align: justify;">After many generations of keeping the notch design, Apple
+                            finally has a breakthrough
+                            Break in design to please fans. Accordingly, on the front of the iPhone 14 Pro Max where
+                            This familiar rabbit ear has been replaced with a unique pill design. The pill on the screen
+                            The Samsung Galaxy S21 FE 5G phoneimage is where the face ID camera and the front camera are
+                            located.</p>
+                        <p style="text-align: justify;"><img src="images/product_sp/55-55.jpg"
+                                alt="Màn hình Dynamic Island" loading="lazy"></p>
+                        <p style="text-align: justify;"></p>
+                    </div>
+                    <div class="cps-block-content_btn-showmore" style="display:block;"><a class="btn-show-more">
+                            See more  <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="10"
+                                    height="10">
+                                    <path
+                                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                                    </path>
+                                </svg></div></a></div>
+                </div>
+            </div>
+            <div class="block-content-product-right" style="position: relative;
+      right: 20px; top: 19px;">
+                <div class="cps-block-technicalInfo mb-3 ml-3 px-3 pt-3 pb-1">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center"
+                        style="margin-bottom: -1rem !important;">
+                        <h2 class="title is-6 mb-3">Specifications</h2> <!---->
+                    </div>
+                    <ul class="technical-content">
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Screen size</p>
+                            <div>6.4 inches</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Screen technology</p>
+                            <div>Super AMOLED</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Rear camera</p>
+                            <div style="width: 50%;">Wide-angle camera: 12 MP, f/1.8, PDAF, OIS
+                                Tele camera: 8 MP, f/2.4, 3x optical zoom
+                                Super wide-angle camera: 12 MP, f/2.2</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Front camera</p>
+                            <div style="width: 50%;">32 MP, f/2.2
+                            </div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Chipset</p>
+                            <div>Exynos 2100 (5nm)</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Amount of RAM
+                            </p>
+                            <div> 8GB GB</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Internal memory</p>
+                            <div>128GB</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Pin</p>
+                            <div>4.500 mAh</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>SIM</p>
+                            <div>2 SIM (Nano-SIM)</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Screen resolution</p>
+                            <div>1080 x 2400 pixels (FullHD+)</div>
+                        </li>
+                        <li
+                            class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                            <p>Screen feature</p>
+                            <div>Equip Spen Pro</div>
+                        </li>
+                    </ul>
+                    <div class="open-modal-btn">
+                        <button class="button my-3 is-flex is-justify-content-center"
+                            style="padding: 10px 10px 10px 50px ;margin: .75rem!important;">
+                            See detailed configuration
+                            <div class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    width="10" height="10">
+                                    <path
+                                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                                    </path>
+                                </svg></div>
+                        </button>
+                    </div>
+                    <div class="modal hide ">
+                        <div class="modal_inner">
+                            <div class="scroll-container">
+                                <div class="modal_header">
+                                    Specifications
+                                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="scroll-content">
+                                    <!-- Nội dung cần cuộn -->
+
+                                    <div class="modal_body" style="margin: .75rem!important;">
+                                        <h2>DETAILS</h2>
+                                        <ul class="technical-content">
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Video</p>
+                                                <div style="width: 50%;">4K@30/60fps, 1080p@30/60fps, gyro-EIS</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Record video first</p>
+                                                <div>4K@30/60fps, 1080p@30/60fps (gyro-EIS)</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Chipset</p>
+                                                <div>Exynos 2100 (5nm)</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Number of ram slots</p>
+                                                <div>2 slots up to 64GB</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Charging technology</p>
+                                                <div style="width: 50%;">Fast Charging: 25W
+                                                    Fast Wireless Charging 15W
+                                                    Reverse Wireless Charging 4.5W</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Wi-Fi</p>
+                                                <div style="width: 50%;">Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi
+                                                    Direct, hotspot</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>GPS</p>
+                                                <div style="width: 50%;">A-GPS, GLONASS, BDS, GALILEO</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Water and dust resistance index</p>
+                                                <div>IP68</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Screen Type</p>
+                                                <div>Perforated (Mole)</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Fingerprint Sensor
+
+                                                </p>
+                                                <div>In-display fingerprint sensor</div>
+                                            </li>
+                                            <li
+                                                class="technical-content-item is-flex is-align-items-center is-justify-content-space-between p-2">
+                                                <p>Types of sensors</p>
+                                                <div>Accelerometer, Compass, Gyroscope</div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="modal_footer">
+                                <button>Cloes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!----> <!---->
+            </div>
+        </div>
+    </section>
+    <!--gallery-->
+    <section class="section wrapper-home-newsletter">
+        <div class="container-fluid">
+            <div class="content-newsletter">
+                <h2>Sign up</h2>
+                <p>Sign up for the business newsletter to update new products, receive information about special offers
+                    and
+                    information
+                    believe
+                    other discounts.</p>
+                <div class="form-newsletter">
+                    <form action="" accept-charset="UTF-8" class="">
+                        <div class="form-group">
+                            <input type="hidden" id="contact_tags">
+                            <input required="" type="email" value="" placeholder="Enter your email"
+                                aria-label="Email Address" class="">
+                            <button type="submit" class=""><span>To send</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                INTRODUCE
+                            </h4>
+                            <div class="footer-content">
+                                <p>Online shopping site for the latest, best, and reputable products, helping you access
+                                    the latest
+                                    technology trends.</p>
+                                <div class="social-list">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-google"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                    <a href="#" class="fab fa-skype"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-link">
+                            <h4 class="footer-title">
+                                JURIDICAL &amp; QUESTION
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li class="item">
+                                        <a href="#" title="Search">Search</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Introduce">Introduce</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Return Policy">Return Policy</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Privacy Policy">Privacy Policy</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Terms of Service">Terms of Service</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Contact Info
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li><span>Address:</span> 66 Vo Van Tan, Thanh Khe district, Da Nang city</li>
+                                    <li><span>Phone:</span> 0949431757</li>
+                                    <li><span>Fax:</span> 0376876576</li>
+                                    <li><span>Mail:</span> dunien811@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                FANPAGE
+                            </h4>
+                            <div class="footer-content">
+                                <div id="fb-root">
+                                    <div class="footer-static-content">
+                                        <div class="fb-page"
+                                            data-href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                                            data-tabs="timeline" data-width="" data-height="215"
+                                            data-small-header="false" data-adapt-container-width="true"
+                                            data-hide-cover="false" data-show-facepile="true">
+                                            <!-- <blockquote cite="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/"
+                        class="fb-xfbml-parse-ignore"><a
+                          href="https://www.facebook.com/AziWorld-Viet-Nam-908555669481794/">AziWorld Viet Nam</a>
+                      </blockquote> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer--copyright">
+            <div class="container">
+                <hr>
+                <!-- <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2019 <a href="https://runner-inn.myharavan.com"> DN</a>. <a target="_blank"
+              href="https://www.facebook.com/henrynguyen202">Powered by HuniBlue</a></p>
+        </div> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script> -->
+<!-- <script src="js/jquery.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+<script src="js/productsp.js"></script>
+
+</html>
